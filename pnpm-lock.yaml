@@ -1,0 +1,65 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ajv:
+        specifier: ^8.17.1
+        version: 8.17.1(typescript@5.4.5)
+      hono:
+        specifier: ^4.4.13
+        version: 4.4.13
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+packages:
+
+  ajv@8.17.1:
+    resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/y3arP6p3yjvGKbOrcC2/4gBL1MZbTWQ==}
+    peerDependencies:
+      typescript:
+        optional: true
+        version: '>=3'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  fast-deep-equal@3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gauJwKAhEa1e7T6jWnvluGqb28/4o7pBi6bCnCMvS1qnqPbJLBGnQ==}
+
+  hono@4.4.13:
+    resolution: {integrity: sha512-QQ0lG0GNKRX5bvqJzFkJm+F8j2Z+Yx/j8HrO1r1uGWYGu3O3Tm9OIhvM3LXa6sEkfM1gDDr5jT1Y4SLPBRXQ==}
+
+  json-schema-traverse@1.0.0:
+    resolution: {integrity: sha512-NM8/P9n3XjXhIZn1ptE3jTOHqmoUWZoSEq4YWXVQ7YCT+cRGZcE+YK+hxqhKWMz3vGNDJIXz6yVFrHMC3VeA==}
+
+  require-from-string@2.0.2:
+    resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9Li2cf4oh0wjM8CqJxUh8tmJzPe8oFNiTBmVYE47J87l9n5fRmtlvEV4Mc9VyGPZuA==}
+
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0ol2vkSToBJwMo6oqLFg5nMXJFk3wVWFbRb9L9+Gv5lTe+Gn15U3WrACCqHb5TTRoA==}
+
+snapshots:
+
+  ajv@8.17.1(typescript@5.4.5):
+    dependencies:
+      fast-deep-equal: 3.1.3
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+      typescript: 5.4.5
+
+  fast-deep-equal@3.1.3: {}
+
+  hono@4.4.13: {}
+
+  json-schema-traverse@1.0.0: {}
+
+  require-from-string@2.0.2: {}
+
+  typescript@5.4.5: {}
