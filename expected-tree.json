@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-15T14:07:16Z",
+  "packages": {
+    "ajv": {
+      "dependencies": [
+        "fast-deep-equal",
+        "json-schema-traverse",
+        "require-from-string",
+        "typescript"
+      ],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "pnpm_snapshot_key": "ajv@8.17.1(typescript@5.4.5)",
+        "optional_peers_satisfied": ["typescript"]
+      },
+      "version": "8.17.1"
+    },
+    "fast-deep-equal": {
+      "dependencies": [],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "version": "3.1.3"
+    },
+    "hono": {
+      "dependencies": [],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "version": "4.4.13"
+    },
+    "json-schema-traverse": {
+      "dependencies": [],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "version": "1.0.0"
+    },
+    "require-from-string": {
+      "dependencies": [],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "version": "2.0.2"
+    },
+    "typescript": {
+      "dependencies": [],
+      "group": "main",
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "also_satisfies_optional_peer_of": ["ajv"]
+      },
+      "version": "5.4.5"
+    }
+  },
+  "pm": "pnpm",
+  "pm_version_tested": "9",
+  "pm_version_under_test": "11.28.6",
+  "root": {
+    "dependencies": [
+      "ajv",
+      "hono",
+      "typescript"
+    ],
+    "name": "optional-peer-resolution-v11",
+    "version": "1.0.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "package.json",
+  "warnings": [
+    "typescript@5.4.5 serves dual roles: direct root dependency (optional: false) and satisfied optional peer of ajv@8.17.1 (snapshot key: ajv@8.17.1(typescript@5.4.5)). The packages map has a single entry keyed 'typescript'; the optional: false value reflects its root-dep role. The peer-satisfaction is recorded in ajv.source_detail.optional_peers_satisfied and typescript.source_detail.also_satisfies_optional_peer_of. Mend UA is expected to include typescript in ajv's dependency list because the pnpm-lock.yaml snapshot for ajv carries it as a concrete dep.",
+    "hono@4.4.13 has no optional peers. Its snapshot carries no transitive deps. If Mend reports typescript or any other package under hono, that indicates cross-contamination from the ajv peer-satisfaction context — a regression introduced or fixed by the pnpm 11.28.6 optional peer resolution change."
+  ]
+}
