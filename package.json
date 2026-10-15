@@ -1,0 +1,13 @@
+{
+  "name": "optional-peer-resolution-v11",
+  "version": "1.0.0",
+  "description": "pnpm 11.28.6 optional peer dependency resolution probe",
+  "private": true,
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "hono": "^4.4.13",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {},
+  "packageManager": "pnpm@11.28.6"
+}
